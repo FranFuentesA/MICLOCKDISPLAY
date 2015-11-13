@@ -41,4 +41,21 @@ public class NumberDisplay
  }
  return val1;
 }
+/**
+* Un método que devuelve el valor actual del display como entero 
+*/
+    public int getValue(){
+    return valor1;        
+}
+/**
+* Un método que incrementa en 1 al display y lo hace volver al principio si alcanza el límite 
+*/
+    public void increment(){
+    if (valor1 < limite) {
+       
+    valor1 = valor1 + 1; 
+    } else {
+        valor1= 0;
+}
+}
 }
